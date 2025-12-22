@@ -21,3 +21,8 @@ Thumbs.db
 reports/*.pdf
 reports/*.html
 
+*.zip
+*.gz
+*.7z
+
+kaggle.json
