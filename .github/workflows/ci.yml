@@ -27,7 +27,8 @@ jobs:
       - name: Smoke test(imports)
         run: |
           python -c "import numpy, pandas, matplotlib; print('Imports OK')"
-
+      - name: Run tests
+        run: pytest -q
       - name: Basic repo sanity checks
         run: |
           test -d src

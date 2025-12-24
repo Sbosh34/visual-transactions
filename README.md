@@ -14,8 +14,8 @@ Using a **sample** of the PaySim synthetic transactions dataset:
 - Produces a short written “insights + recommendations” snapshot
 
 ## Dataset
-This project uses the **PaySim** synthetic financial transactions dataset (mobile-money style). The dataset is distributed on Kaggle and is generated from the PaySim simulator. :contentReference[oaicite:0]{index=0}  
-Background on PaySim as a simulator (how synthetic datasets are generated to resemble real transaction behaviour) is discussed in the PaySim paper/proceedings. :contentReference[oaicite:1]{index=1}
+This project uses the **PaySim** synthetic financial transactions dataset (mobile-money style). The dataset is distributed on Kaggle and is generated from the PaySim simulator.
+Background on PaySim as a simulator (how synthetic datasets are generated to resemble real transaction behaviour) is discussed in the PaySim paper/proceedings.
 
 > Note: I did **not** commit the full raw dataset into Git. Only a small, reproducible sample is used for quick runs.
 
