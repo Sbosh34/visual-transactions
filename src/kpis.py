@@ -10,6 +10,13 @@ def compute_kpis(df: pd.DataFrame) -> pd.DataFrame:
     kpiAvgValue = df["amount"].mean()
     kpiFraudRate =df['isFraud'].mean()
     kpiFlaggedRate = df['isFlaggedFraud'].mean()
+    
+    kpiTotalTxnsStr = f"{kpiTotalTxns:,}"
+    kpiTotalValueStr = f"{kpiTotalValue:,.2f}"
+    kpiAvgValueStr = f"{kpiAvgValue:,.2f}"
+    kpiFraudRateStr = f"{kpiFraudRate:.4%}"
+    kpiFlaggedRateStr = f"{kpiFlaggedRate:.4%}"
+
 
     kpis = pd.DataFrame({
     "KPI": [
@@ -20,11 +27,11 @@ def compute_kpis(df: pd.DataFrame) -> pd.DataFrame:
         "Flagged Fraud Rate",
     ],
     "Value": [
-        kpiTotalTxns,
-        kpiTotalValue,
-        kpiAvgValue,
-        kpiFraudRate,
-        kpiFlaggedRate,
+        kpiTotalTxnsStr,
+        kpiTotalValueStr,
+        kpiAvgValueStr,
+        kpiFraudRateStr,
+        kpiFlaggedRateStr,
     ],
     })
 

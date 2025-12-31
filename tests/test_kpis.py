@@ -10,8 +10,8 @@ def test_compute_kpis_basic_numbers():
 
     d = dict(zip(kpis['KPI'], kpis['Value']))
 
-    assert d["Total transactions"] == 3
-    assert d["Total value"] == 200.0
-    assert d["Average value"] == (200.0 / 3.0)
-    assert d["Fraud Rate"] == (1.0 / 3.0)
-    assert d["Flagged Fraud Rate"] == (1.0 / 3.0)
+    assert d["Total transactions"] == "3"
+    assert d["Total value"] == "200.00"
+    assert d["Average value"] == "66.67"
+    assert d["Fraud Rate"] == "33.3333%"
+    assert d["Flagged Fraud Rate"] == "33.3333%"
